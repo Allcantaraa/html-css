@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url(Minecraft.ttf);
+}
+
+:root {
+  --cor01: #4785FF;
+  --cor02: #2C6DF0;
+  --cor03: #0F40A3;
+  --cor04: #EDE4D1;
+  --cor05: #A37100;
+
+  --fonte-principal: 'Minecraft' ,'cursive';
+  --fonte-padrão: 'Arial''Helvetica' sans-serif 'cursive';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--cor01);
+  font-family: var(--fonte-padrão);
+}
+
+header {
+  background-image: linear-gradient(to bottom, var(--cor02), var(--cor03));
+  text-align: center;
+  padding-top: 40px;
+  min-width: 150px;
+}
+
+header h1 {
+  font-family: var(--fonte-principal);
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.171);
+  color: var(--cor04);
+}
+nav {
+  background-color: var(--cor03);
+  padding: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.267);
+}
+
+nav a {
+  padding: 5px;
+  transition-duration: .3s;
+  color: var(--cor04);
+  text-decoration: none;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  background-color: var(--cor04);
+  color: var(--cor05);
+  padding: 8px;
+}
+
+main {
+  min-width: 320px;
+  max-width: 800px;
+  margin: auto;
+  background-color: var(--cor04);
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+main h1 {
+  font-family: var(--fonte-principal);
+  padding: 8px;
+  text-align: center;
+  color: var(--cor03);
+  font-size: 2em;
+}
+
+main h2 {
+  font-family: var(--fonte-principal);
+  margin: 10px;
+  padding: 8px;
+  text-align: center;
+  color: var(--cor03);
+  background-image: linear-gradient(to right, var(--cor02), white);
+}
+
+main img {
+  width: 100%;
+}
+
+main p {
+  text-align: justify;
+  margin: 15px 0px;
+  text-indent: 30px;
+  line-height: 1.8em;
+  font-size: 1em;
+}
+
+aside {
+  background-color: var(--cor05);
+  min-width: 25%;
+  max-width: 50%;
+  min-height: 75px;
+  max-height: 150px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: aliceblue;
+}
