@@ -21,9 +21,11 @@
   padding: 0;
 }
 
-body {
+ html, body {
+  min-height: 100vh;
   background-color: var(--cor01);
   font-family: var(--fonte-padrão);
+  scroll-behavior: smooth;
 }
 
 header {
@@ -68,6 +70,7 @@ main {
   padding: 20px;
   margin-bottom: 25px;
   border-radius: 0px 0px 10px 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.267);
 }
 
 main h1 {
@@ -106,19 +109,38 @@ aside {
   min-height: 75px;
   max-height: 150px;
   margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.253);
 }
 
 aside ul {
-  list-style-position: inside;
+  padding: 5px;
+  list-style: none;
+
+}
+
+aside ul a {
+  color: white;
+  text-decoration: none;
+}
+
+aside ul  a:hover {
+  text-decoration: underline;
 }
 
 footer {
   background-color: var(--cor03);
   text-align: center; 
+  padding: 10px;
 }
 
 footer a {
  
   color: white;
   text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
