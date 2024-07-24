@@ -108,6 +108,17 @@ aside {
   margin-top: 20px;
 }
 
+aside ul {
+  list-style-position: inside;
+}
+
 footer {
-  background-color: aliceblue;
+  background-color: var(--cor03);
+  text-align: center; 
+}
+
+footer a {
+ 
+  color: white;
+  text-decoration: none;
 }
