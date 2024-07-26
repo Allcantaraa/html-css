@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
     body {
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
@@ -17,12 +23,21 @@
 
     h1 {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
+      margin-top: 50px;
       }
 
     td {
       border: 1px solid black;
       padding: 8px;
+    }
+
+    caption {
+      border: 1px solid black;
+      border-bottom: 0px;
+      color:rgb(202, 76, 76) ;
+      text-transform: capitalize;
+      padding: 6px;
     }
 
     tr#cor {
@@ -33,6 +48,7 @@
 <body>
   <h1>Tabela exemplo</h1>
   <table>
+    <caption>Esporte Preferido da Turma</caption>
     <tr id="cor">
       <td>Esporte</td>
       <td>Meninos</td>
